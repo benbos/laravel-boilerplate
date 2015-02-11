@@ -6,8 +6,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-		<!-- build:css(src/public/) css/app.min.css -->
+    
+        <!-- build:css(src/public/) css/app.min.css -->
         <link rel="stylesheet" href="/components/normalize.css/normalize.css">
         <link rel="stylesheet" href="/css/app.css">
         <!-- endbuild -->
@@ -17,14 +17,14 @@
     </head>
     <body data-config='{"env":"homestead"}'>
 
-		<div id="app"></div>
+        <div id="app"></div>
 
-		<!-- build:js(src/public/) js/vendor/require.min.js -->
-		<script src="/components/requirejs/require.js"></script>
-		<!-- endbuild -->
-		<!-- build:js(src/public/) js/app.min.js -->
-		<script src="/js/app.js"></script>
-		<!-- endbuild -->
+        <!-- build:js(src/public/) js/vendor/require.min.js -->
+        <script src="/components/requirejs/require.js"></script>
+        <!-- endbuild -->
+        <!-- build:js(src/public/) js/app.min.js -->
+        <script src="/js/app.js"></script>
+        <!-- endbuild -->
 
-	</body>
+    </body>
 </html>
