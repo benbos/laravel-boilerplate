@@ -21,3 +21,14 @@ grunt compass
 cd src/
 composer install
 ```
+
+#Grunt commands
+For rebuilding CSS from SASS use:
+```sh
+grunt compass
+```
+
+For building a minified/cache busting app:
+```sh
+grunt build
+```
