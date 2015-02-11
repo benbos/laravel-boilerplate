@@ -14,6 +14,26 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
+		\App\Item::create([
+			'name' => 'Hello'
+		]);
+
+		\App\Item::create([
+			'name' => 'World'
+		]);
+
+		\App\Item::create([
+			'name' => 'How'
+		]);
+
+		\App\Item::create([
+			'name' => 'Are'
+		]);
+
+		\App\Item::create([
+			'name' => 'You?'
+		]);
+
 		// $this->call('UserTableSeeder');
 	}
 
