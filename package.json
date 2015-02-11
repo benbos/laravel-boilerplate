@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/benbos/one-page-app.git"
+    "url": "git://github.com/benbos/laravel-boilerplate.git"
   },
   "dependencies": {
     "grunt": "^0.4.5",
