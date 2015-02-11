@@ -1,7 +1,7 @@
 /* global requirejs:false, require:false */
 "use strict";
 
-requirejs.config({
+requirejs.config( {
 	baseUrl: "/js",
 	paths: {
 		"jquery": "../components/jquery/dist/jquery",
@@ -17,8 +17,8 @@ requirejs.config({
 		templateExtension: "hbs",
         partialsUrl: ""
     }
-});
+} );
 
-require([
+require( [
 	"app/ApplicationRouter"
-], function() {});
+], function() {} );

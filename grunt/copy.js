@@ -14,7 +14,14 @@ module.exports = {
                 "public/.htaccess",
                 "public/favicon.ico",
                 "public/img/**/*.{jpg,gif,png,json}",
-                "public/fonts/**/*"
+                "public/fonts/**/*",
+                "public/index.php",
+                "app/**/*",
+                "bootstrap/**/*",
+                "config/**/*",
+                "database/**/*",
+                "resources/**/*",
+                "vendor/**/*"
              ],
             dest: "dist/",
             expand: true

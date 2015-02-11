@@ -1,14 +1,14 @@
 /* global define:false */
 "use strict";
 
-define([
+define( [
     "backbone",
     "TweenMax",
     "app/views/BaseView",
     "hbs!app/templates/IndexTemplate"
-], function(Backbone, TweenMax, BaseView, template) {
+], function( Backbone, TweenMax, BaseView, template ) {
 
-    return BaseView.extend({
+    return BaseView.extend( {
 
         className: "view index-view",
 
@@ -16,7 +16,7 @@ define([
 
         events: {
             "Transition:transitionInComplete": function() {
-                console.log("done transitionInComplete");
+                console.log( "done transitionInComplete" );
             }
         },
 
@@ -24,14 +24,14 @@ define([
 
             this.render();
 
-            this.listenToOnce(this, "Transition:transitionInComplete", function() {});
+            this.listenToOnce( this, "Transition:transitionInComplete", function() {} );
 
-            this.listenToOnce(this, "Transition:transitionOutComplete", function() {});
+            this.listenToOnce( this, "Transition:transitionOutComplete", function() {} );
         },
 
         render: function() {
 
-            this.$el.html(template({
+            this.$el.html( template( {
                 title: "Welcome to the Index",
                 comments: [
                     { comment: "Hello" },
@@ -40,12 +40,10 @@ define([
                     { comment: "Are" },
                     { comment: "You?" }
                 ]
-            }));
-
-            console.log("hello render");
+            } ) );
 
             return this.$el;
         }
-    });
+    } );
 
-});
+} );

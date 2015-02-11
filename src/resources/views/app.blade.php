@@ -15,7 +15,7 @@
         <script src="/components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
-    <body data-config='{"env":"homestead"}'>
+    <body data-config='{"env":"{{ App::environment() }}"}'>
 
         <div id="app"></div>
 

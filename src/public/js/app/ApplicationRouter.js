@@ -1,11 +1,11 @@
 /* global define:false,App:false */
 "use strict";
 
-define([
+define( [
     "backbone",
     "app/views/IndexView",
     "app/views/ContactView"
-], function(Backbone, IndexView, ContactView) {
+], function( Backbone, IndexView, ContactView ) {
 
     /**
      * Main Application object
@@ -21,7 +21,7 @@ define([
         Config: false,
 
         initConfig: function() {
-            this.Config = $("body").data("config");
+            this.Config = $( "body" ).data( "config" );
         },
 
         init: function() {
@@ -36,7 +36,7 @@ define([
             this.initConfig();
 
             // Start Backbone history
-            Backbone.history.start({ pushState: false });
+            Backbone.history.start( { pushState: false } );
         }
 
     };
@@ -44,35 +44,35 @@ define([
     /**
      * Main View
      */
-    App.Extensions.View = Backbone.View.extend({
+    App.Extensions.View = Backbone.View.extend( {
 
         el: "#app",
 
         currentActiveView: false,
 
-        goto: function(View) {
+        goto: function( View ) {
 
             var ViewObject = false;
 
-            if (View) {
+            if ( View ) {
                 ViewObject = new View();
             }
 
             // First hide current active view
-            if (this.currentActiveView) {
+            if ( this.currentActiveView ) {
 
-                if (typeof this.currentActiveView.transitionOut === "function") {
+                if ( typeof this.currentActiveView.transitionOut === "function" ) {
                     this.currentActiveView.transitionOut();
                 } else {
                     this.currentActiveView.remove();
                 }
             }
 
-            if (ViewObject && typeof ViewObject === "object") {
+            if ( ViewObject && typeof ViewObject === "object" ) {
 
-                this.$el.append(ViewObject.$el);
+                this.$el.append( ViewObject.$el );
 
-                if (typeof ViewObject.transitionIn === "function") {
+                if ( typeof ViewObject.transitionIn === "function" ) {
                     ViewObject.transitionIn();
                 }
 
@@ -80,12 +80,12 @@ define([
             }
         }
 
-    });
+    } );
 
     /**
      * Main routing
      */
-    App.Router = Backbone.Router.extend({
+    App.Router = Backbone.Router.extend( {
 
         routes: {
             "":         "index",
@@ -93,18 +93,18 @@ define([
         },
 
         contact: function() {
-            App.Instance.goto(ContactView);
+            App.Instance.goto( ContactView );
         },
 
         index: function() {
-            App.Instance.goto(IndexView);
+            App.Instance.goto( IndexView );
         }
 
-    });
+    } );
 
     /**
      * Init main Application object
      */
     App.init();
 
-});
+} );

@@ -1,12 +1,12 @@
 /* global module:false,require:false */
 "use strict";
 
-module.exports = function(grunt) {
+module.exports = function( grunt ) {
 
-    require("time-grunt")(grunt);
-    require("load-grunt-config")(grunt);
+    require( "time-grunt" )( grunt );
+    require( "load-grunt-config" )( grunt );
 
-    grunt.registerTask("build", [
+    grunt.registerTask( "build", [
         "clean:dist",
         "jshint",
         "jscs",
@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         "filerev",
         "usemin",
         "strip",
+        "mkdir:laravelStorage",
         "clean:temp"
-    ]);
+    ] );
 
 };
