@@ -16,11 +16,13 @@ npm install
 bower install
 grunt compass
 ```
-####Install Laravel packages
+####Install Laravel
 ```sh
 cd src/
 composer install
 ```
+
+Make sure you setup your own **.env** file correctly, you can copy the .env.example file.
 
 #Grunt commands
 For rebuilding CSS from SASS use:

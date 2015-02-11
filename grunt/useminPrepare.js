@@ -6,7 +6,8 @@
  * @type {Object}
  */
 module.exports = {
-    html: "src/resources/views/**/*.php",
+    html: [ "src/resources/views/**/*.php" ],
+    js: [ "src/public/js/*.js" ],
     options: {
         dest: "dist/public/"
     }
