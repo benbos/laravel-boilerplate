@@ -1,18 +1,23 @@
-Used libs
-=========================================
-* [bower](https://github.com/bower/bower)
-* [grunt](https://github.com/gruntjs/grunt)
-* [compass](https://github.com/chriseppstein/compass)
-* [jquery](https://github.com/jquery/jquery)
-* [modernizr](https://github.com/Modernizr/Modernizr)
-* [requirejs](https://github.com/jrburke/requirejs)
-* [require-handlebars-plugin](https://github.com/SlexAxton/require-handlebars-plugin)
-* [underscore](https://github.com/jashkenas/underscore)
-* [backbone](https://github.com/jashkenas/backbone)
-* [greensock-js](https://github.com/greensock/GreenSock-JS/)
-* [handlebars.js](https://github.com/wycats/handlebars.js/)
+#Requirements
 
-Installation
-=========================================
-* npm install 
-* bower install
+- PHP >= 5.4
+- Mcrypt PHP Extension
+- OpenSSL PHP Extension
+- Mbstring PHP Extension
+
+#Installation
+
+####Install NPM packages
+```sh
+npm install
+```
+####Install bower components
+```sh
+bower install
+grunt compass
+```
+####Install Laravel packages
+```sh
+cd src/
+composer install
+```
