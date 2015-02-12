@@ -38,3 +38,8 @@ For building a minified/cache busting app:
 ```sh
 grunt build
 ```
+
+For auto building SASS use:
+```sh
+grunt watch
+```
