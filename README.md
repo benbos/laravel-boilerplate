@@ -2,6 +2,7 @@
 
 - NPM >= 1.4.28
 - Ruby >= 1.9.3
+- Composer >= 1.0
 - Bower >= 1.3.12
 - PHP >= 5.4
  - Mcrypt PHP Extension
