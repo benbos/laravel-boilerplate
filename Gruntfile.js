@@ -10,7 +10,7 @@ module.exports = function( grunt ) {
         "clean:dist",
         "jshint",
         "jscs",
-        "compass",
+        "sass",
         "copy:dist",
         "useminPrepare",
         "concat:generated",
