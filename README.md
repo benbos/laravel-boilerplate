@@ -18,7 +18,7 @@ npm install
 ####Install bower components
 ```sh
 bower install
-grunt compass
+grunt sass
 ```
 ####Install Laravel
 ```sh
@@ -31,7 +31,7 @@ Make sure you setup your own **.env** file correctly, you can copy the .env.exam
 #Grunt commands
 For rebuilding CSS from SASS use:
 ```sh
-grunt compass
+grunt sass
 ```
 
 For building a minified/cache busting app:
